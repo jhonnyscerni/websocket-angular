@@ -4,7 +4,8 @@
 
 export const environment = {
     production: false,
-    hmr       : false
+    hmr       : false,
+    OPTION_URL : 'wss://ws.binaryws.com/websockets/v3?app_id=1089'
 };
 
 /*

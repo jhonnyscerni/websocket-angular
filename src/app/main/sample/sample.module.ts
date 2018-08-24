@@ -1,3 +1,5 @@
+import { WebsocketService } from './../../service/websocket.service';
+import { OptionService } from './../../service/option.service';
 import { SampleRoutes } from './sample.routing';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
@@ -20,6 +22,10 @@ import { SampleComponent } from './sample.component';
     ],
     exports     : [
         SampleComponent
+    ],
+    providers: [
+        WebsocketService,
+        OptionService
     ]
 })
 
